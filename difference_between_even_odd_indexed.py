@@ -7,9 +7,7 @@ list1 = [2, 4, 3, 9, 13, 12, 7, 6, 1, 5]
 -10
 '''
 list1 = [2, 4, 3, 9, 13, 12, 7, 6, 1, 5]
-x = slice(0,len(list1),2)
-y = slice(1,len(list1),2)
-even =[]
-odd =[]
-even.append(list1[x])
-odd.append(list1[y])
+x = sum(list1[::2])
+y = sum(list1[1::2])
+z=x-y
+print(z)
